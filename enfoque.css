@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: blue;
+  font-family: sans-serif;
 }
 /* estilos de columnas --------------------------*/
 [class*="col-"]{
@@ -12,32 +12,30 @@ body {
   padding: 12px;
   float: left;
 }
-col-1{
-  /*se realiza la operacion (n/12)*100*/
+
+
+
+
+/*se realiza la operacion (n/12)*100*/
+.col-1{
   width: 8.333%;
 }
 
 .col-2{
-  /*se realiza la operacion (n/12)*100*/
   width: 16.666%;
 }
 .col-3{
-  /*se realiza la operacion (n/12)*100*/
   width: 25%;
 }
 .col-4{
-  /*se realiza la operacion (n/12)*100*/
   width: 33.33%;
 }
 .col-5{
-  /*se realiza la operacion (n/12)*100*/
   width: 41.666%;
 }
 .col-6{
-  /*se realiza la operacion (n/12)*100*/
   width: 50%;
 }.col-7{
-
   width: 58.333%;
 }.col-8{
   width:
@@ -61,4 +59,54 @@ col-1{
 }
 .row::after {
   clear: both;
+}
+
+
+/*Estilos de header*/
+
+header{
+  background-color: #FF6309;
+}
+.color{
+  background-color: red;
+  padding: 1% 1%;
+}
+.container{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+
+}
+
+li{
+  display: inline-block;
+  padding: 10px;
+
+}
+a{
+  text-decoration: none;
+  display: block;/*nos permite definir la proporcion de crecimiento*/
+  padding: 5% 5%;
+
+  font-size: 100%;
+  font-weight: bold;
+  color: black;
+
+}
+/*a:hover{
+  background-color: blue;
+}*/
+
+
+/*utilizar @media queries que sirven como condicciones*/
+@media (max-width:1000px){
+  header{
+    display: block;
+    font-size: 80%;
+
+  }
+  .container{
+    font-size: 80%;
+  }
 }
