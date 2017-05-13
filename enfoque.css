@@ -1,43 +1,37 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
-body {
-  background-color: blue;
-}
+
 /* estilos de columnas --------------------------*/
 [class*="col-"]{
-  min-height: 7px;
-  padding: 12px;
+  min-height: 0px;
+  padding: 0px;
   float: left;
 }
-col-1{
-  /*se realiza la operacion (n/12)*100*/
+
+/*se realiza la operacion (n/12)*100*/
+.col-1{
   width: 8.333%;
 }
 
 .col-2{
-  /*se realiza la operacion (n/12)*100*/
   width: 16.666%;
 }
 .col-3{
-  /*se realiza la operacion (n/12)*100*/
   width: 25%;
 }
 .col-4{
-  /*se realiza la operacion (n/12)*100*/
   width: 33.33%;
 }
 .col-5{
-  /*se realiza la operacion (n/12)*100*/
   width: 41.666%;
 }
 .col-6{
-  /*se realiza la operacion (n/12)*100*/
   width: 50%;
 }.col-7{
-
   width: 58.333%;
 }.col-8{
   width:
@@ -61,4 +55,177 @@ col-1{
 }
 .row::after {
   clear: both;
+}
+
+
+/*Estilos de header*/
+.colorBlanco{
+  background-color: white;
+  padding: 1% 1%;
+}
+.container{
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  font-size: 200%;
+}
+
+li{
+  display: inline-block;
+  padding: 10px;
+}
+a{
+  text-decoration: none;
+  display: block;/*nos permite definir la proporcion de crecimiento*/
+  padding: 5% 5%;
+  font-size: 100%;
+  font-weight: bold;
+  color: black;
+  align-self: center;
+}
+a:hover{
+  background-color: blue;
+}
+
+/* Estilos de contenido*/
+.containerContenido{
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.rowImagen{
+  position: relative;
+}
+.fondoImagen {
+  width: 100%;
+  height: 400px;
+
+}
+h1 {
+  color: blue;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  font-size: 300%;
+}
+
+ h2, h3 {
+  color: red;
+  font-size: 200%;
+  margin: 10px 20px 30px 40px;
+}
+
+/*estilos de area de video*/
+
+.video{
+  align-self: center;
+  padding: 10px 20px 30px 40px;
+
+}
+.colorCajaContenido {
+  background-color: blue;
+}
+.colorCajaVideo {
+  background-color: yellow;
+}
+.colorHeaderFooter{
+  background-color: #FF6309;
+}
+
+/*Estilos de formulario*/
+
+form {
+    /* Sólo para centrar el formulario a la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver el borde del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.alinear{
+    /* Para asegurarse que todos los tienen el mismo tamaño y están alineados correctamente */
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+
+
+/*utilizar @media queries que sirven como condicciones*/
+
+
+/*estilo movil*/
+
+@media (min-width: 0px) and (max-width: 320px) {
+    #menu{
+        visibility: hidden;
+        font-size: 20%;
+    }
+    #contenidoT{
+      display: none;
+    }
+    #cambioColor{
+      background-color: green;
+      font-size: 20%;
+    }
+}
+
+@media (min-width: 321px) and (max-width:480px){
+    #menu{
+        visibility: hidden;
+        font-size: 40%;
+    }
+    #contenidoT{
+      display: none;
+    }
+    #cambioColor{
+      background-color: green;
+      font-size: 40%;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width:768px){
+    #menu{
+        display:block;
+        font-size: 60%;
+    }
+    #contenidoT{
+      font-size: 60%;
+    }
+    #cambioColor{
+      background-color: green;
+      font-size: 60%;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width:1200px){
+    #menu{
+        display:block;
+        font-size: 80%;
+    }
+    #contenidoT{
+      font-size: 80%;
+    }
+}
+
+
+@media (min-width: 1201px){
+    #menu{
+        display:block;
+        font-size: 100%;
+    }
+    #contenidoT{
+      font-size: 100%;
+    }
 }
