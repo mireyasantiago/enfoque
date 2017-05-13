@@ -9,42 +9,138 @@
     <link rel="stylesheet" href="enfoque.css">
   </head>
   <body>
-    <header >
+    <header class="container colorHeaderFooter">
         <nav class="row">
-          <ul class="col-12 container">
-            <li><a href="#" >Apps</a></li>
-            <li><a href="#" >Movies</a></li>
-            <li><a href="#" >Games</a></li>
-            <li><a href="#" >Books</a></li>
-            <li><a href="#" >Newpapers</a></li>
+          <ul>
+            <li class="col-2 "><a href="#" >Inicio</a></li>
+            <li class="col-2 "><a href="#" >Apps</a></li>
+            <li class="col-2 "><a href="#" >Movies</a></li>
+            <li class="col-2 "><a href="#" >Games</a></li>
+            <li class="col-2 "><a href="#" >Books</a></li>
+            <li class="col-2 "><a href="#" >Newpapers</a></li>
           </ul>
-
         </nav>
     </header>
 <!-- termina area menu ------------------------------------>
-    <section class="container ">
-      <span class="col-12 color">
+    <section class="container">
+      <span class="col-12 colorBlanco">
       </span>
+    </section>
+<!--- Area de contenido  texto1 ---------------------------------------->
+    <section class="containerContenido">
+      <section class="row  rowImagen">
+        <section class="col-12">
+          <img src="fondo.jpg" alt="" class="fondoImagen">
+          <h1>TEXTO INICIAL</h1>
+       </section>
+      </section>
+    </section>
+<!--- Area de contenido -------------------------------------------------->
+
+    <section class="containerContenido colorCajaContenido">
+      <section class="row video">
+        <article class="col-12">
+          <h2> HEADING</h2>
+        </article>
+      </section>
+
+      <section class="row">
+        <div class="col-6">
+          <img src="fondo.jpg" alt="">
+        </div>
+        <div class="col-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velitesse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, suntin culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="col-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velitesse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, suntin culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="col-6">
+          <img src="fondo.jpg" alt="">
+        </div>
+      </section>
 
     </section>
+<!-- Termina area de contenido--------------------------------------------->
 
+<!-- Area de video -------------------------------------------------------->
+
+    <section class="containerContenido colorCajaVideo">
+      <div class="row video">
+        <div class="col-12">
+          <h3>Heading</h3>
+        </div>
+      </div>
+      <div class="row video">
+        <section class="col-12">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jnqfr-wxfsw" frameborder="0" allowfullscreen>
+          </iframe>
+
+        </section>
+      </div>
+    </section>
 
 <!--- area de formulario ------------------------------------>
-    <form action="/my-handling-form-page" method="post">
-    <section>
-        <input type="text" id="name" placeholder="Email Address:"/>
-    </section>
-    <section>
-        <input type="email" id="mail" placeholder="Name:"/>
-    </section>
-    <section>
-        <textarea id="msg" placeholder="Comment:"></textarea>
-    </section>
-    <section>
-        <button type="submit">Send your message</button>
-    </section>
-</form>
 
+    <section class="containerContenido">
+      <div class="row video">
+        <div class="col-12">
+          <h3>Heading</h3>
+        </div>
+      </div>
+
+      <section class="row">
+        <div class="col-12">
+          <form class="" method="post">
+            <section>
+              <input type="text" id="name" placeholder="Email Address:" class="alinear">
+            </section>
+            <section>
+              <input type="email" id="mail" placeholder="Name:" class="alinear"/>
+            </section>
+            <section>
+              <textarea id="msg" placeholder="Comment:" class="alinear"></textarea>
+            </section>
+            <section>
+                <button type="submit">Send your message</button>
+            </section>
+          </form>
+        </div>
+      </section>
+      <div class="row">
+        <div class="col-12 colorBlanco">
+
+        </div>
+      </div>
+    </section>
+
+<!-- Fin de area de formulario------------------------------------------------->
+<!-- Area de footer------------------------------------------------------------>
+    <section class="containerContenido colorHeaderFooter">
+      <div class="row video">
+        <footer class="col-12">
+          <p>Powered by</p>
+        </footer>
+
+      </div>
+
+    </section>
 
   </body>
 </html>
