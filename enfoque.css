@@ -159,3 +159,114 @@ form {
 
 
 /*utilizar @media queries que sirven como condicciones*/
+
+
+/*estilo movil y desktop*/
+
+@media (min-width: 0px) and (max-width: 320px) {
+    #menu{
+        visibility: hidden;
+
+    }
+    #contenidoT{
+      display: none;
+    }
+    #cambioColor{
+      background-color: green;
+      font-size: 20%;
+    }
+    .containerContenido{
+      font-size: 20%;
+      background-color: red;
+    }
+    .container{
+      font-size: 20%;
+      background-color: red;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width:480px){
+    #menu{
+        visibility: hidden;
+
+    }
+    #contenidoT{
+      display: none;
+    }
+    #cambioColor{
+      background-color: green;
+      font-size: 40%;
+    }
+    .containerContenido{
+      font-size: 40%;
+      background-color: pink;
+    }
+    .container{
+      font-size: 40%;
+      background-color: pink;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width:768px){
+    #menu{
+        display:block;
+
+    }
+    #contenidoT{
+      font-size: 60%;
+    }
+    #cambioColor{
+      background-color: green;
+      font-size: 60%;
+    }
+    .containerContenido{
+      font-size: 60%;
+      background-color: blue;
+    }
+    .container{
+      font-size: 60%;
+      background-color: blue;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width:1200px){
+    #menu{
+        display:block;
+
+    }
+    #contenidoT{
+      font-size: 80%;
+    }
+    .containerContenido{
+      font-size: 80%;
+      background-color: white;
+    }
+    .container{
+      font-size: 80%;
+      background-color: white;
+    }
+}
+
+
+@media (min-width: 1201px){
+    #menu{
+        display:block;
+
+    }
+    #contenidoT{
+      font-size: 100%;
+    }
+    .containerContenido{
+      font-size: 100%;
+      background-color: blueviolet;
+    }
+    .container{
+      font-size: 100%;
+      background-color: violet;
+    }
+}
