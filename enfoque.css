@@ -159,23 +159,3 @@ form {
 
 
 /*utilizar @media queries que sirven como condicciones*/
-@media  @media (max-width:1200px){
-  header{
-
-    font-size: 80%;
-  }
-  .container{
-    font-size: 100%;
-    background-color: pink;
-  }
-}
-@media (min-width:1024px) and (max-width:1200px){
-  header{
-    font-size: 80%;
-  }
-  .container{
-
-    font-size: 80%;
-    background-color: blue;
-  }
-}
